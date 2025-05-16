@@ -97,5 +97,5 @@ Don't use this command as Anonymous Admin. Switch to normal mode to execute comm
 
     FILE_CAPTION = """<i>{file_name}</i>\n\nJoin: https://t.me/ANIMEUNIVERSETEUGU"""
 
-🚫 ᴘʟᴇᴀꜱᴇ ᴀᴠᴏɪᴅ ʀᴇꜱʜᴀʀɪɴɢ ᴇʟꜱᴇᴡʜᴇʀᴇ  
+print("🚫 Please avoid resharing elsewhere") 
 ©️ ʙʏ ʏᴏᴜʀ ғᴀᴠ ʙᴏᴛ"""
