@@ -1,6 +1,8 @@
 class script(object):
 
-    START_TXT = """<b>👋 ʜᴇʏ {}, <i>{}</i>
+    START_TXT = """<b>👋 ʜᴇʏ {}, <i>{}</i></b>"""
+
+    WELCOME_TEXT = """<b>👋 Welcome! I'm a filter bot here to help you.</b>
 
 ✨ I’m a powerful Auto-Filter + Link Shortener Bot for your Telegram group.
 
