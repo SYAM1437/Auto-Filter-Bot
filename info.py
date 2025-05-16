@@ -72,22 +72,22 @@ DATA_DATABASE_URL = environ.get('DATA_DATABASE_URL', "")
 if len(DATA_DATABASE_URL) == 0:
     logger.error('DATA_DATABASE_URL is missing, exiting now')
     exit()
-FILES_DATABASE_URL = environ.get('FILES_DATABASE_URL', "")
+FILES_DATABASE_URL = environ.get('FILES_DATABASE_URL', "DATA_DATABASE_URL")
 if len(FILES_DATABASE_URL) == 0:
     logger.error('FILES_DATABASE_URL is missing, exiting now')
     exit()
-SECOND_FILES_DATABASE_URL = environ.get('SECOND_FILES_DATABASE_URL', "")
+SECOND_FILES_DATABASE_URL = environ.get('SECOND_FILES_DATABASE_URL', "DATA_DATABASE_URL")
 if len(SECOND_FILES_DATABASE_URL) == 0:
     logger.info('SECOND_FILES_DATABASE_URL is empty')
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/HA_Bots_Support')
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/HA_Bots')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/HA_Films_World')
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/HA_Bots")
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/HA_Bots")
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/ANIMEUNIVERSEDiscussiongroup')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/ANIMEUNIVERSETEUGU')
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/ANIMEUNIVERSE_ANIME')
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/ANIMEUNIVERSETEUGU")
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/ANIMEUNIVERSETEUGU")
 
 # Bot settings
 DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds
@@ -98,19 +98,19 @@ QUALITY = [quality.lower() for quality in environ.get('QUALITY', '360p 480p 720p
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 FILE_CAPTION = environ.get("FILE_CAPTION", script.FILE_CAPTION)
 SHORTLINK_URL = environ.get("SHORTLINK_URL", "mdiskshortner.link")
-SHORTLINK_API = environ.get("SHORTLINK_API", "36f1ae74ba1aa01e5bd73bdd0bc22aa915443501")
+SHORTLINK_API = environ.get("SHORTLINK_API", "4c137d4c5d1fcb12f1abc197e8230ef9dd368ae9")
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
 PM_FILE_DELETE_TIME = int(environ.get('PM_FILE_DELETE_TIME', '3600'))
 
 # boolean settings
-USE_CAPTION_FILTER = is_enabled('USE_CAPTION_FILTER', False)
+USE_CAPTION_FILTER = is_enabled('USE_CAPTION_FILTER', True)
 IS_VERIFY = is_enabled('IS_VERIFY', False)
-AUTO_DELETE = is_enabled('AUTO_DELETE', False)
-WELCOME = is_enabled('WELCOME', False)
-PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
-LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
+AUTO_DELETE = is_enabled('AUTO_DELETE', True)
+WELCOME = is_enabled('WELCOME', True)
+PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', True)
+LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", True)
 LINK_MODE = is_enabled("LINK_MODE", True)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 IMDB = is_enabled('IMDB', True)
@@ -120,13 +120,13 @@ PM_SEARCH = is_enabled('PM_SEARCH', True)
 
 # for stream
 IS_STREAM = is_enabled('IS_STREAM', True)
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "")
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002525809390")
 if len(BIN_CHANNEL) == 0:
     logger.error('BIN_CHANNEL is missing, exiting now')
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "")
+URL = environ.get("URL", "https://t.me/+358kje1MyN0xNDY1")
 if len(URL) == 0:
     logger.error('URL is missing, exiting now')
     exit()
@@ -147,12 +147,12 @@ STICKERS = [sticker for sticker in environ.get('STICKERS', 'CAACAgIAAxkBAAEN4ctn
 
 # for Premium 
 PRE_DAY_AMOUNT = int(environ.get('PRE_DAY_AMOUNT', '10')) # add amount in INR for premium charge pre day 
-UPI_ID = environ.get("UPI_ID", "")
+UPI_ID = environ.get("UPI_ID", "SASUKE")
 if len(UPI_ID) == 0:
     logger.error('UPI_ID is missing, exiting now')
     exit()
-UPI_NAME = environ.get("UPI_NAME", "") # add your UPI account name
+UPI_NAME = environ.get("UPI_NAME", "SASUKE") # add your UPI account name
 if len(UPI_NAME) == 0:
     logger.error('UPI_NAME is missing, exiting now')
     exit()
-RECEIPT_SEND_USERNAME = environ.get("RECEIPT_SEND_USERNAME", "@Hansaka_Anuhas")
+RECEIPT_SEND_USERNAME = environ.get("RECEIPT_SEND_USERNAME", "@RINGAN_OF_SASUKE")
